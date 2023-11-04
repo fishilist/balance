@@ -48,6 +48,11 @@
     border: 1px solid transparent;
 }
 
+.form__body_input.disabled {
+    border: 1px solid #313131;
+    background-color: #313131;
+}
+
 .form__body_input:not(:last-child) {
     margin-bottom: 8px;
 }
@@ -85,4 +90,15 @@
 .form-send {
     color: #C5FF21;
     background-color: #209FC8;
+}
+
+.note {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0);
+}
+.note_title {
+    font-size: 42px;
 }

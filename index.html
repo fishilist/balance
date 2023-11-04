@@ -11,18 +11,21 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="note">
+            <h2 class="note_title"></h2>
+        </div>
         <form name="balance" class="form">
             <div class="form__header">
                 <p class="form__header_title form-headline">Баланс:</p>
                 <p id="overall-balance" class="form__header_balance form-headline"></p>
             </div>
             <div class="form__body">
-                <input type="number" class="form__body_input form-create" name="createBalance" placeholder="Создание баланса" />
-                <input type="number" class="form__body_input form-update" name="updateBalance" placeholder="Редактирование баланса" />
+                <input type="number" class="form__body_input form-create disabled" name="createBalance" placeholder="Создание баланса" />
+                <input type="number" class="form__body_input form-update disabled" name="updateBalance" placeholder="Редактирование баланса" />
             </div>
             <div class="form__actions">
                 <button type="submit" name="deleteBalance" class="form__actions_btn form-delete">Удалить</button>
-                <button type="submit" class="form__actions_btn form-send">Отправить</button>
+                <button type="submit" name="submitForm" class="form__actions_btn form-send">Отправить</button>
             </div>
         </form>
     </div>
